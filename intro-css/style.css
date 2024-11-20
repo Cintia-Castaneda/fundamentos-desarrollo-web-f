@@ -1,0 +1,35 @@
+body{
+background-color: rgb(156, 117, 185);
+}
+
+h1 {
+color: blueviolet;
+}
+p{
+    text-decoration: underline;
+}
+a{
+    text-decoration: none; 
+    background-color: blueviolet;
+    color: white;
+    
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius:15px;
+}
+.ball{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-color: brown;
+    border: 3px solid black;
+}
+
+.text-important{
+    font-size: 2rem;
+    background-color: crimson
+    
+}
+#tituloWeb{
+    font-family: "Sour Gummy", sans-serif;
+}
