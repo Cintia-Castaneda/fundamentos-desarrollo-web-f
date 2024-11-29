@@ -1,0 +1,15 @@
+
+
+
+
+ELementos que siembre van al inicio de style.css
+funciona para limpiarlo de propiedades Default
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
