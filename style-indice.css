@@ -1,0 +1,60 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #e2a9e7;
+    color: rgb(46, 46, 46);
+}
+
+header{
+    background-color: rgb(69, 37, 65); 
+    color: white;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    padding: 30px 30px;
+}
+
+table{
+    margin: 30px;
+}
+
+.tabla-lecciones{
+    width: 50px;
+}
+
+.imagen-icono{
+    width: 80px;
+}
+th{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 30px 30px;
+    font-size: 25px;
+
+    bottom: 0;
+    background-color: rgb(240, 240, 240);
+    width: 400px;
+    height: 200px;
+    border: 3px solid black;
+    border-radius:25px;
+
+
+}
+
+.decoracion{
+position: absolute;
+width: 300px;
+right: 0;
+filter: blur(1px);
+top: 350px;
+}
