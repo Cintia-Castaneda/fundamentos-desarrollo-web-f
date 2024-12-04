@@ -4,11 +4,14 @@
     padding: 0;
     box-sizing: border-box;
     list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+
 
 header{
     background-color: rgb(208, 203, 154);
-
+    font-size: ;
 }
 
 .container-header{
@@ -76,4 +79,6 @@ margin-top: 60px;
 .green{background-color: rgb(57, 163, 128);}
 .lemon-green{background-color: rgb(80, 178, 139);}
 .tomato{background-color: rgb(201, 81, 65);}
-.rosa{background-color: rgb(red, green, blue);}
+.rosa{background-color: rgb(216, 69, 123);}
+.naranja{background-color: rgb(216, 115, 59);}
+.amarillo-naranja{background-color: rgb(217, 145, 43);}

@@ -1,0 +1,18 @@
+Usando flex 
+
+Position: relativo, absoluto, fixed, sitcky
+Top, left, right, botton
+alineacion con flexbox
+
+alt+z = alinear texto
+alt+shift+a agregar comentario
+
+gap separa todos los elementos que afecta (ayuda a que no se auno por uno) ejemplo: gap:15px
+
+alt sostenido para escribir en varia slineas
+
+absolute pone el objeto en un lugar especifico
+
+sticky respeta el punto inicial de la caja pero cuando el scrol toca el elemento, paratir de alli se queda congelado
+
+fixed
