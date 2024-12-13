@@ -190,4 +190,45 @@ header{
     background-color: wheat;
     padding: 10px;
     border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Mi primer breakpoint tablet*/
+@media screen and (max-width: 992px){
+    body{
+        background-color: #781b59;
+    }
+    .welcome-content{
+        flex-direction: column-reverse;
+    }
+    .col-2{
+        flex: none;
+        height: 300px;
+        background-color: blueviolet;
+    }
+    .img-pizza, .img-hoja, .img-tomato {
+        width: 230px;
+    }
+    .product-card{
+        width: 49%;
+
+    }
+}
+
+/* Mi primer breakpoint celular*/
+@media screen and (max-width: 576px){
+    body{
+        background-color: #1b7854;
+    }
+    .productos-content {
+        flex-wrap: wrap;
+    }
+.productos-content {
+        flex-wrap: wrap;
+    }
+    .product-card {
+        flex: none;
+        width: 80%;
+        margin: auto;
+    }
 }

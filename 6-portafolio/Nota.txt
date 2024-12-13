@@ -16,3 +16,4 @@ absolute pone el objeto en un lugar especifico
 sticky respeta el punto inicial de la caja pero cuando el scrol toca el elemento, paratir de alli se queda congelado
 
 fixed
+

@@ -1,0 +1,11 @@
+R E S P O N S I V E
+
+Es la técnica que permite que un sitio web se adapte automáticamente a diferentes tamaños de pantalla
+
+IMPORTANCIA
+    Mejora la experiencia del usuario
+    Aumenta el alcance
+    Mejora el CSS
+    Simplifica el mantenimiento
+
+MEDIDAS ABSOLUTAS
