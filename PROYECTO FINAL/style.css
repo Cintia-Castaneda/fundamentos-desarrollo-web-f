@@ -6,6 +6,10 @@
     list-style: none;
 
 }
+a{
+    text-decoration: none;
+    color: inherit;
+}
 
 body{
     background-color: #1A1A1A;
@@ -66,7 +70,6 @@ header{
 .introduccion {
     display: flex;
     align-items: flex-end;
-
     width: 40;
     padding: 20px;
     position: relative;
@@ -88,33 +91,72 @@ header{
 
 
 /* ABOUT ME */
-.conjunto-iconos{
-    display: flex;
-    height: 60px;
-    padding: 10px;
-}
+
 
 .about-me{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-
+    grid-template-columns: 30% 70%;
     text-align: center;
     width: 100%;
     padding: 20px;
 
 }
+.about-me p{
+    font-size: medium;
+    padding: 10px;
+    grid-column: 2/3;
+    grid-row: 1;
+}
 
+.text-about-me p{
+    grid-column: 2/3;
+    grid-row: 1;
+}
+
+.division-about-me{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skill{
+    grid-column: 1/3;
+    grid-row: 2;
+    padding-top: 50px;
+
+}
+.conjunto-iconos{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(2,1fr);
+    padding: 10px;
+    top: 100px;
+    bottom: 100px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.conjunto-iconos img{
+    height: 70px;
+    justify-content:space-between;
+    align-items: center;
+}
 
 /* Sección proyectos */
 /* /////////////////////////////////////////////////////////////////////////////// */
 #proyectos{
-    background-color: lightgray;
+    background-color: #434241;
+    text-align: center;
+    padding: 20px;
+
 }
 #proyectos > .container{
-    background-color: rgb(156, 156, 156);
+    background-color: #434241;
 }
 .proyectos-content{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
     gap: 10px;
     padding: 20px;
 }
@@ -126,21 +168,13 @@ header{
     overflow: hidden;
 }
 
-/* .proyectos-content div:nth-child(1){
-    background-color: rgb(31, 167, 235);
-}
-.proyectos-content div:nth-child(2){
-    background-color: rgb(152, 234, 20);
-} */
 .proyectos-content div:nth-child(3){
     background-color: tomato;
 }
 
 .proyecto-card:hover .ventana-proyecto{
     display: flex;
-    /*Opcion1: .proyecto-card:hover{opacity: .5;}Cuando el cursor esté dentro del objeto, se pone la opacidad */
-/* Hover es una instalacia que se activa solo cuando el cursos está encima */
-/* Opcion2:.proyecto-card:hover .ventana-proyecto{opacity: .5;}Cuando haga un hover sobre el proyecto-car dar una indicacion, cuando toques el primero quiero que .cardhover se ejecute */
+
 }
 
 
@@ -150,11 +184,10 @@ header{
     display: none;
     flex-direction: column;
     justify-content: space-between;
-
+    background-color: rgb(255, 255, 255, 0.5);
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.51)!important;
     top:0;
     left: 0;
 }
@@ -162,7 +195,10 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 20px;
+    font-weight: bold;
+    font-size: x-large;
+    color: black;
 }
 .ventana-proyecto-footer{
     display: flex;
@@ -210,9 +246,7 @@ header{
 
 /* Mi primer breakpoint tablet*/
 @media screen and (max-width: 992px){
-    body{
-/*         background-color: #781b59; */
-    }
+
     .welcome-content{
         flex-direction: column-reverse;
     }
@@ -225,21 +259,30 @@ header{
         width: 230px;
     }
     .proyecto-card{
-        width: 49%;
+        width: 80%;
     }
-    .skills-content{
-        /* display: grid; */
+
+    .proyectos-content{
         grid-template-columns: repeat(2,1fr);
-/*         gap: 30px;
-        padding: 30px; */
+    }
+
+    .about-me{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .text-about-me{
+        grid-row: 2;
+    }
+    .conjunto-iconos{
+        grid-template-columns: repeat(8,1fr);
+        grid-template-rows: repeat(2,1fr);
     }
 }
 
 /* Mi primer breakpoint celular*/
 @media screen and (max-width: 576px){
-    body{
-/*         background-color: #1b7854; */
-    }
+
     .proyectos-content {
         flex-wrap: wrap;
     }
@@ -257,6 +300,10 @@ header{
     .skills-content > div{
         text-align: center;
         /* Esta configuracion dentra los textos de cada division de la pagina  */
+    }
+    .conjunto-iconos{
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: repeat(3,1fr);
     }
 }
 
