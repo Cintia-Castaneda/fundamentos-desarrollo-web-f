@@ -1,60 +1,102 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body{
-    background-color: #e2a9e7;
-    color: rgb(46, 46, 46);
+body {
+    background-color: #f4f4f4; /* Un color gris claro más neutral */
+    color: #333; /* Gris oscuro para el texto */
+    line-height: 1.6;
 }
 
-header{
-    background-color: rgb(69, 37, 65); 
+header {
+    background-color: #333; /* Un gris oscuro para el encabezado */
     color: white;
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    width: 100%;
-    padding: 30px 30px;
+    text-align: center;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil para darle profundidad */
 }
 
-table{
-    margin: 30px;
+header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
 }
 
-.tabla-lecciones{
-    width: 50px;
+.tabla-contenido {
+    padding: 40px;
+    text-align: center;
 }
 
-.imagen-icono{
-    width: 80px;
+.grid-lecciones {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px; /* Un mayor espacio entre columnas */
+    margin-top: 20px;
 }
-th{
+
+.leccion {
     display: flex;
-    justify-content:space-around;
+    flex-direction: column;
     align-items: center;
-    padding: 30px 30px;
-    font-size: 25px;
-
-    bottom: 0;
-    background-color: rgb(240, 240, 240);
-    width: 400px;
-    height: 200px;
-    border: 3px solid black;
-    border-radius:25px;
-
-
+    justify-content: center;
+    padding: 20px;
+    background-color: #e7e7e7; 
+    border: 2px solid #ddd; 
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave para un efecto de profundidad */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto al pasar el mouse */
 }
 
-.decoracion{
-position: absolute;
-width: 300px;
-right: 0;
-filter: blur(1px);
-top: 350px;
+.leccion:hover {
+    transform: translateY(-5px); /* Efecto de desplazamiento al pasar el ratón */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Aumenta la sombra en hover */
+}
+
+.leccion a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #333;
+    margin-top: 10px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.leccion a:hover {
+    color: #007BFF; 
+}
+
+.imagen-icono {
+    width: 100px;
+    margin-bottom: 15px;
+    border-radius: 10px; /* Bordes redondeados para las imágenes */
+    transition: transform 0.3s ease; /* Efecto al pasar el mouse */
+}
+
+.imagen-icono:hover {
+    transform: scale(1.2); /* Aumentar la imagen al pasar el ratón */
+}
+
+.decoracion {
+    position: absolute;
+    width: 300px;
+    right: 0;
+    filter: blur(1px);
+    top: 350px;
+    opacity: 0.2; /* Baja opacidad para la imagen de fondo */
+}
+
+
+@media (max-width: 768px) {
+    .grid-lecciones {
+        grid-template-columns: 1fr 1fr; 
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-lecciones {
+        grid-template-columns: 1fr; 
+    }
 }
