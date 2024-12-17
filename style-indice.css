@@ -7,17 +7,17 @@
 }
 
 body {
-    background-color: #f4f4f4; /* Un color gris claro más neutral */
-    color: #333; /* Gris oscuro para el texto */
+    background-color: #f4f4f4;
+    color: #333;
     line-height: 1.6;
 }
 
 header {
-    background-color: #333; /* Un gris oscuro para el encabezado */
+    background-color: #333;
     color: white;
     text-align: center;
     padding: 30px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil para darle profundidad */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
@@ -33,7 +33,7 @@ header h1 {
 .grid-lecciones {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px; /* Un mayor espacio entre columnas */
+    gap: 30px;
     margin-top: 20px;
 }
 
@@ -43,16 +43,16 @@ header h1 {
     align-items: center;
     justify-content: center;
     padding: 20px;
-    background-color: #e7e7e7; 
-    border: 2px solid #ddd; 
+    background-color: #e7e7e7;
+    border: 2px solid #ddd;
     border-radius: 12px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave para un efecto de profundidad */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto al pasar el mouse */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .leccion:hover {
-    transform: translateY(-5px); /* Efecto de desplazamiento al pasar el ratón */
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Aumenta la sombra en hover */
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
 .leccion a {
@@ -65,18 +65,39 @@ header h1 {
 }
 
 .leccion a:hover {
-    color: #007BFF; 
+    color: #007BFF;
 }
 
 .imagen-icono {
     width: 100px;
     margin-bottom: 15px;
-    border-radius: 10px; /* Bordes redondeados para las imágenes */
-    transition: transform 0.3s ease; /* Efecto al pasar el mouse */
+    border-radius: 10px;
+    transition: transform 0.3s ease;
 }
 
 .imagen-icono:hover {
-    transform: scale(1.2); /* Aumentar la imagen al pasar el ratón */
+    transform: scale(1.2);
+}
+
+/* Estilo especial para la última lección - PROYECTO FINAL */
+.leccion.black {
+    background-color: #1a1a1a; 
+    border: 2px solid #f52720; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);  /* Sombra más pronunciada */
+}
+
+.leccion.black a {
+    color: #f52720; 
+    font-size: 1.5rem; /* Aumentar ligeramente el tamaño del texto */
+}
+
+.leccion.black:hover {
+    transform: translateY(-8px); /* Hacerla más notoria al pasar el mouse */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* Más sombra en hover */
+}
+
+.leccion.black a:hover {
+    color: #FFF; 
 }
 
 .decoracion {
@@ -85,18 +106,17 @@ header h1 {
     right: 0;
     filter: blur(1px);
     top: 350px;
-    opacity: 0.2; /* Baja opacidad para la imagen de fondo */
+    opacity: 0.2;
 }
-
 
 @media (max-width: 768px) {
     .grid-lecciones {
-        grid-template-columns: 1fr 1fr; 
+        grid-template-columns: 1fr 1fr;
     }
 }
 
 @media (max-width: 480px) {
     .grid-lecciones {
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
     }
 }
